@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Website</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body class="bg-green-50 text-gray-800 overflow-x-hidden">
+    <!-- Navbar section -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <h1 class="text-2xl font-bold text-green-700">Plantify</h1>
+
+        <nav class="hidden md:flex gap-8 font-medium">
+          <a href="#home" class="hover:text-green-600 duration-300">Home</a>
+          <a href="#about" class="hover:text-green-600 duration-300">About</a>
+          <a href="#plants" class="hover:text-green-600 duration-300">Plants</a>
+          <a href="#contact" class="hover:text-green-600 duration-300"
+            >Contact</a
+          >
+        </nav>
+
+        <a
+          href="#subscribe"
+          class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full duration-300"
+        >
+          Shop Now
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="min-h-screen flex items-center pt-24 px-6">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+        <!-- Left -->
+        <div class="space-y-7 animate fade-left">
+          <p
+            class="flex items-center gap-3 w-52 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium"
+          >
+            <img
+              class="w-10 animate-bounce"
+              src="./assets/flower.png"
+              alt="flower"
+            />
+            Nature Loves You
+          </p>
+
+          <h2 class="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
+            Make Your Home
+            <span class="text-green-600">Green</span>
+            & Fresh
+          </h2>
+
+          <p class="text-gray-600 text-lg leading-relaxed">
+            Discover beautiful indoor plants that bring freshness, peace, and
+            elegance to your living space.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-green-600 hover:bg-green-700 text-white px-7 py-4 rounded-full font-medium duration-300"
+            >
+              Explore Plants
+            </button>
+
+            <button
+              class="border-2 border-green-600 text-green-700 hover:bg-green-600 hover:text-white px-7 py-4 rounded-full font-medium duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+
+          <!-- Stats -->
+          <div class="flex gap-10 pt-6 flex-wrap">
+            <div>
+              <h3 class="text-3xl font-bold text-green-700">120+</h3>
+              <p class="text-gray-600">Plant Species</p>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-bold text-green-700">10k+</h3>
+              <p class="text-gray-600">Happy Customers</p>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-bold text-green-700">4.9★</h3>
+              <p class="text-gray-600">Ratings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="relative flex justify-center animate fade-right">
+          <!-- hero img -->
+          <img
+            src="./assets/hero_img.jpg"
+            alt="plant"
+            class="relative max-h-[600px] z-10 w-full max-w-lg rounded-[40px] shadow-2xl object-cover"
+          />
+
+          <!-- absolute Card -->
+          <div
+            class="absolute bottom-6 left-0 glass border border-white/30 rounded-3xl p-5 shadow-xl z-20"
+          >
+            <p class="text-sm text-gray-600">Best Seller</p>
+            <h4 class="font-semibold text-lg">Monstera Plant</h4>
+            <p class="text-green-700 font-bold mt-1">$24.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Image -->
+        <div class="relative animate rotate-in">
+          <img
+            src="./assets/about_image.jpg"
+            alt="about plant"
+            class="rounded-[40px] shadow-2xl"
+          />
+
+          <div
+            class="absolute -bottom-8 lg:-right-8 bg-green-600 text-white p-3 sm:p-8 rounded-3xl shadow-xl"
+          >
+            <h3 class="text-4xl font-bold">15+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="space-y-6 animate fade-up">
+          <p class="text-green-700 font-semibold uppercase tracking-widest">
+            About Us
+          </p>
+
+          <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+            We Help You Build a Green Environment
+          </h2>
+
+          <p class="text-gray-600 leading-relaxed text-lg">
+            Our mission is to connect people with nature through beautiful and
+            affordable plants. We provide healthy indoor plants with expert
+            guidance for your home and workspace.
+          </p>
+
+          <!-- Features -->
+          <div class="grid sm:grid-cols-2 gap-5 pt-4">
+            <div class="bg-white p-6 rounded-3xl shadow-md">
+              <h3 class="font-semibold text-xl mb-2 flex items-center">
+                <img
+                  class="w-10 me-3"
+                  src="./assets/healthy_plant.png"
+                  alt="healthy_plant"
+                />
+                Healthy Plants
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Fresh and carefully nurtured plants for every home.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-md">
+              <h3 class="font-semibold text-xl mb-2 flex items-center">
+                <img
+                  class="w-10 me-3"
+                  src="./assets/fast_delivery.png"
+                  alt="fast_delivery"
+                />
+                Fast Delivery
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Safe packaging and quick delivery to your doorstep.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-md">
+              <h3 class="font-semibold text-xl mb-2 flex items-center">
+                <img
+                  class="w-10 me-3"
+                  src="./assets/care_tips.png"
+                  alt="care_tips"
+                />
+                Care Tips
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Expert tips to keep your plants healthy and beautiful.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-md">
+              <h3 class="font-semibold text-xl mb-2 flex items-center">
+                <img
+                  class="w-8 me-3"
+                  src="./assets/eco_friendly.png"
+                  alt="eco_friendly"
+                />
+                Eco Friendly
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Sustainable and eco-conscious plant solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- plants section -->
+    <section id="plants" class="py-24 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-green-700 font-semibold uppercase tracking-widest">
+            Our Plants
+          </p>
+
+          <h2 class="text-4xl lg:text-5xl font-bold mt-4">
+            Popular Indoor Plants
+          </h2>
+
+          <p class="text-gray-600 mt-5">
+            Choose from our premium collection of healthy and decorative indoor
+            plants.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Card 1 -->
+          <div
+            class="bg-green-50 rounded-[35px] overflow-hidden shadow-md hover:-translate-y-3 duration-300 animate fade-left"
+          >
+            <img
+              src="./assets/plant1.jpg"
+              alt="plant1"
+              class="h-72 w-full object-cover"
+            />
+
+            <div class="p-7">
+              <div class="flex justify-between items-center">
+                <h3 class="text-2xl font-semibold">Monstera</h3>
+                <p class="text-green-700 font-bold text-xl">$24</p>
+              </div>
+
+              <p class="text-gray-600 mt-4">
+                Stylish tropical plant perfect for indoor decoration.
+              </p>
+
+              <button
+                class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-full duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-green-50 rounded-[35px] overflow-hidden shadow-md hover:-translate-y-3 duration-300 animate fade-right"
+          >
+            <img
+              src="./assets/plant2.jpg"
+              alt="plant2"
+              class="h-72 w-full object-cover"
+            />
+
+            <div class="p-7">
+              <div class="flex justify-between items-center">
+                <h3 class="text-2xl font-semibold">Snake Plant</h3>
+                <p class="text-green-700 font-bold text-xl">$18</p>
+              </div>
+
+              <p class="text-gray-600 mt-4">
+                Low maintenance and air-purifying indoor plant.
+              </p>
+
+              <button
+                class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-full duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="sm:col-span-2 lg:col-span-1 bg-green-50 rounded-[35px] overflow-hidden shadow-md hover:-translate-y-3 duration-300 animate fade-left"
+          >
+            <img
+              src="./assets/plant3.jpg"
+              alt="plant3"
+              class="h-72 w-full object-cover"
+            />
+
+            <div class="p-7">
+              <div class="flex justify-between items-center">
+                <h3 class="text-2xl font-semibold">Peace Lily</h3>
+                <p class="text-green-700 font-bold text-xl">$20</p>
+              </div>
+
+              <p class="text-gray-600 mt-4">
+                Elegant flowering plant ideal for modern interiors.
+              </p>
+
+              <button
+                class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-full duration-300"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscription section -->
+    <section id="subscribe" class="py-24 px-6">
+      <div
+        class="max-w-5xl mx-auto bg-green-600 rounded-[40px] p-10 lg:p-16 text-center text-white animate zoom-in"
+      >
+        <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+          Subscribe For Plant Updates
+        </h2>
+
+        <p class="mt-6 text-green-100 max-w-2xl mx-auto">
+          Get weekly plant care tips, offers, and latest arrivals directly in
+          your inbox.
+        </p>
+
+        <div
+          class="mt-10 flex flex-col sm:flex-row gap-4 bg-white p-3 rounded-3xl sm:rounded-full max-w-2xl mx-auto"
+        >
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="flex-1 px-5 py-3 rounded-full outline-none text-gray-800"
+          />
+
+          <button
+            class="bg-green-700 hover:bg-green-800 px-8 py-3 rounded-full duration-300"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer
+      id="contact"
+      class="bg-green-950 text-white px-6 py-16 animate fade-up"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Brand -->
+        <div>
+          <h2 class="text-3xl font-bold">Plantify</h2>
+
+          <p class="text-green-100 mt-5 leading-relaxed">
+            Bringing nature closer to your home with beautiful indoor plants.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-5">Quick Links</h3>
+
+          <div class="flex flex-col gap-3 text-green-100">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#plants">Plants</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="text-xl font-semibold mb-5">Services</h3>
+
+          <div class="flex flex-col gap-3 text-green-100">
+            <a href="#">Plant Care</a>
+            <a href="#">Delivery</a>
+            <a href="#">Consultation</a>
+            <a href="#">Garden Design</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xl font-semibold mb-5">Contact</h3>
+
+          <div class="space-y-3 text-green-100">
+            <p><i class="fa-solid fa-location-dot me-3"></i> Chennai, India</p>
+            <p><i class="fa-solid fa-phone me-3"></i> +91 98765 43210</p>
+            <p><i class="fa-solid fa-envelope me-3"></i> plantify@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-green-800 mt-14 pt-6 text-center text-green-200"
+      >
+        <p>&copy; 2026 Plantify. All Rights Reserved.</p>
+        <a href="#home" class="absolute flex items-center justify-center right-10 bottom-8 bg-white text-green-600 w-10 h-10 rounded-full animate-ping stopTouch"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
